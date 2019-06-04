@@ -57,7 +57,7 @@ def main():
     arcade.open_window(WIDTH, HEIGHT, "Flappy Bird")
     arcade.start_render()
 
-    draw_background()
+    draw_background = (arcade.set_background_color(arcade.color.SKY_BLUE))
 
     if arcade.key is True:
         jump()
