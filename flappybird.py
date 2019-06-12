@@ -23,6 +23,11 @@ pipes_on_screen_numb = 6
 
 list_of_pipes = []
 
+arcade.open_window(WIDTH, HEIGHT, "My Arcade Game") 
+arcade.set_background_color(arcade.color.WHITE)
+arcade.schedule(update, 1/60)
+
+'''
 def jump():
     player_pos_y += jump_speed
     jump_time = 2
@@ -105,3 +110,4 @@ def main():
     arcade.finish_render()
 
 main()
+'''
