@@ -22,10 +22,14 @@ pipe_speed = 3
 pipes_on_screen_numb = 6
 
 list_of_pipes = []
-
-arcade.open_window(WIDTH, HEIGHT, "My Arcade Game") 
-arcade.set_background_color(arcade.color.WHITE)
-arcade.schedule(update, 1/60)
+def setup():
+    
+    for pipe_multiplyer in rnage(1, pipes_on_screen_numb):
+            list_of_pipes.append([WIDTH + 10 * pipe_multiplyer,random.radiant(0, HEIGHT), False])
+    
+    arcade.open_window(WIDTH, HEIGHT, "My Arcade Game") 
+    arcade.set_background_color(arcade.color.WHITE)
+    arcade.schedule(update, 1/60)
 
 '''
 def jump():
