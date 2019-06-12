@@ -22,6 +22,7 @@ pipe_speed = 3
 pipes_on_screen_numb = 6
 
 list_of_pipes = []
+
 def setup():
     
     for pipe_multiplyer in rnage(1, pipes_on_screen_numb):
